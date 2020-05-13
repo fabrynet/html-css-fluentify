@@ -9,6 +9,7 @@
 /* regole generali */
 body {
   font-family: Montserrat, sans-serif;
+  /* padding: 0 20%; */
 }
 header {
   height: 500px;
@@ -18,11 +19,9 @@ header {
 a {
   text-decoration: none;
 }
-.padding1 {
+.h-container,
+.s-container {
   padding: 0 20%;
-}
-.padding2 {
-  padding: 0 25%;
 }
 .buttons, .logins {
   background-color: #66cc00;
@@ -37,111 +36,123 @@ a {
   padding: 5px 20px;
 }
 /* debug */
-/* .box {
+.box {
   background-color: blue;
   height: 100%;
-} */
+}
 
-/* menu navigazione */
+/* barra di navigazione */
 .navigation-bar {
   height: 100px;
-  /* padding: 10px 0; */
+  padding: 10px 0;
   font-size: 10px;
   color: #fff;
   /* debug */
   /* background-color: yellow; */
 }
-.navigation-bar:hover {
+.navigation-bar:after {
   content: "";
   display: table;
   clear: both;
 }
-/* logo */
-.logo,
+/* elementi all'interno della barra di navigazione */
+.h-logo,
 .h-nav,
 .h-nav-right {
-  line-height: 100px;
+  /* line-height: 100px; */
   float: left;
+}
+/* logo */
+.h-logo {
+  width: 15%;
 }
 /* navbar centrale */
 .h-nav {
-
+  width: 45%;
+  line-height: 50px;
 }
 /* navbar di destra */
 .h-nav-right {
-  /* line-height: 100px; */
+  width: 40%;
+  text-align: right;
+  line-height: 50px;
 }
 
-.inline-menu {
+ul.inline-menu {
   list-style-type: none;
   overflow: hidden;
 }
 
-.inline-menu-item {
+li.inline-menu-item {
   float: left;
 }
 
-.inline-menu-item a {
+li.inline-menu-item a {
   display: block;
   color: white;
   text-align: center;
   padding: 0 10px;
 }
 
-.inline-menu-item a:hover {
+li.inline-menu-item a:hover {
   background-color: rgba(0, 0, 0, 0.5);
+}
+.inline-menu .logins {
+  margin: 0 20px;
 }
 
 
 /* jumbotron */
-#jumbotron {
+.h-jumbotron {
   position: relative;
   height: 400px;
   background-image: url("../fluentify-imgs/fluentify-jumbo.png");
-  background-size: contain;
+  background-size: 960px;
   background-repeat: no-repeat;
-  background-position: 220%;
+  background-position: 130%;
   /* debug */
   /* background-color: red; */
 }
-#jumbotron h1 {
+.h-jumbotron .h-jumbotron-group {
   position: absolute;
   left: 0;
   top: 20%;
   width: 50%;
+
+}
+.h-jumbotron-group h1 {
   color: #fff;
   font-size: 40px;
 }
-#jumbotron .buttons {
+.h-jumbotron-group .buttons {
   padding: 15px;
-  position: absolute;
-  left: 0;
-  top: 50%;
-
+  margin: 20px 0;
 }
 
 /* Sezione 1 */
-.section1 {
+#section1 {
   height: 100px;
   background-color: lightgrey;
 }
 
 /* Sezione 2 */
-.section2 {
+#section2 {
   height: 300px;
+  padding: 0 25%;
   /* debug */
   /* background-color: green; */
 }
 
 /* Sezione 3 */
-.section3 {
+#section3 {
   height: 300px;
+  padding: 0 25%;
   /* debug */
   /* background-color: pink; */
 }
 
 /* Sezione 4 */
-.section4 {
+#section4 {
   height: 100px;
   background-color: lightgrey;
 }
