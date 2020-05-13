@@ -43,47 +43,55 @@ a {
 } */
 
 /* menu navigazione */
-#navigation-bar {
+.navigation-bar {
   height: 100px;
-  padding: 10px 0;
+  /* padding: 10px 0; */
   font-size: 10px;
   color: #fff;
   /* debug */
   /* background-color: yellow; */
 }
-/* imposto INLINE-BLOCK a tutti gli elementi della barra di navigazione */
-#navigation-bar div {
-  display: inline-block;
-  height: 100px;
+.navigation-bar:hover {
+  content: "";
+  display: table;
+  clear: both;
 }
-/* #navigation-bar .logo {
-  vertical-align: middle;
-} */
-ul {
+/* logo */
+.logo,
+.h-nav,
+.h-nav-right {
+  line-height: 100px;
+  float: left;
+}
+/* navbar centrale */
+.h-nav {
+
+}
+/* navbar di destra */
+.h-nav-right {
+  /* line-height: 100px; */
+}
+
+.inline-menu {
   list-style-type: none;
   overflow: hidden;
 }
 
-li {
+.inline-menu-item {
   float: left;
 }
 
-li a {
+.inline-menu-item a {
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 10px;
+  padding: 0 10px;
 }
 
-li a:hover {
+.inline-menu-item a:hover {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* tutor */
-#navigation-bar .tutor {
-  display: block;
-  margin: 0 0 0 auto;
-}
 
 /* jumbotron */
 #jumbotron {
@@ -92,7 +100,7 @@ li a:hover {
   background-image: url("../fluentify-imgs/fluentify-jumbo.png");
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: 220%;
   /* debug */
   /* background-color: red; */
 }

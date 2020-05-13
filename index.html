@@ -8,24 +8,26 @@
   <body>
     <!-- intestazione -->
     <header class="padding1">
-      <nav id="navigation-bar">
+      <div class="navigation-bar">
         <div class="logo">
           <img src="fluentify-imgs/fluentify-logo.svg" alt="Logo Fluentify">
         </div>
-        <div class="nav">
+        <nav class="h-nav">
           <ul class="inline-menu">
-            <li><a href="#">IL METODO</a></li>
-            <li><a href="#">LA TECNOLOGIA</a></li>
-            <li><a href="#">REAL-LIFE ENGLISH</a></li>
-            <li><a href="#">SOLUZIONI AZIENDALI</a></li>
+            <li class="inline-menu-item"><a href="#">IL METODO</a></li>
+            <li class="inline-menu-item"><a href="#">LA TECNOLOGIA</a></li>
+            <li class="inline-menu-item"><a href="#">REAL-LIFE ENGLISH</a></li>
+            <li class="inline-menu-item"><a href="#">SOLUZIONI AZIENDALI</a></li>
           </ul>
-        </div>
-        <div class="tutor">
-          DIVENTA UN TUTOR
-          <input type="submit" name="login" value="LOGIN" class="logins">
-          <button type="button" name="button" class="buttons">Struttura un piano</button>
-        </div>
-      </nav>
+        </nav>
+        <nav class="h-nav-right">
+          <ul class="inline-menu">
+            <li class="inline-menu-item"><a href="#">DIVENTA UN TUTOR</a></li>
+            <li class="inline-menu-item"><input type="submit" name="login" value="LOGIN" class="logins"></li>
+            <li class="inline-menu-item">  <button type="button" name="button" class="buttons">Struttura un piano</button></li>
+          </ul>
+        </nav>
+      </div>
       <div id="jumbotron">
         <h1>Scegli l'inglese studiato per i professionisti</h1>
         <button type="button" name="button" class="buttons">Struttura un piano</button>
