@@ -43,43 +43,47 @@ a {
 } */
 
 /* menu navigazione */
-.navigation-bar {
+#navigation-bar {
   height: 100px;
   padding: 10px 0;
+  font-size: 10px;
   color: #fff;
   /* debug */
   /* background-color: yellow; */
 }
 /* imposto INLINE-BLOCK a tutti gli elementi della barra di navigazione */
-.navigation-bar div {
+#navigation-bar div {
   display: inline-block;
   height: 100px;
 }
-/* stili per i menu di navigazione */
-#header-nav {
-  /* vertical-align: top; */
-    line-height: 100%;
+/* #navigation-bar .logo {
+  vertical-align: middle;
+} */
+ul {
+  list-style-type: none;
+  overflow: hidden;
 }
-.inline-menu {
-  line-height: 100%;
+
+li {
+  float: left;
 }
-.inline-menu li {
-  display: inline-block;
-  padding: 0 10px 0;
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 10px;
 }
-.inline-menu li a {
-  color: #fff;
-  /* rendo linkabile l'intera area verticale di ogni li */
-  display: inline-block;
-}
-.inline-menu li a:visited {
-  color: #fff;
-}
-.inline-menu li:hover {
+
+li a:hover {
   background-color: rgba(0, 0, 0, 0.5);
-  transition: 0.5s;
 }
+
 /* tutor */
+#navigation-bar .tutor {
+  display: block;
+  margin: 0 0 0 auto;
+}
 
 /* jumbotron */
 #jumbotron {
