@@ -1,0 +1,66 @@
+/* reset della pagina */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* regole generali */
+body {
+  font-family: sans-serif;
+}
+header {
+  height: 500px;
+  background-color: #003366;
+  /* debug */
+}
+.padding1 {
+  padding: 0 20%;
+}
+.padding2 {
+  padding: 0 25%;
+}
+/* debug */
+.box {
+  background-color: blue;
+  height: 100%;
+}
+
+/* menu navigazione */
+.navigation-bar {
+  height: 100px;
+  /* debug */
+  background-color: yellow;
+}
+/* jumbotron */
+.jumbotron {
+  height: 400px;
+  /* debug */
+  background-color: red;
+}
+
+/* Sezione 1 */
+.section1 {
+  height: 100px;
+  background-color: lightgrey;
+}
+
+/* Sezione 2 */
+.section2 {
+  height: 300px;
+  /* debug */
+  background-color: green;
+}
+
+/* Sezione 3 */
+.section3 {
+  height: 300px;
+  /* debug */
+  background-color: pink;
+}
+
+/* Sezione 4 */
+.section4 {
+  height: 100px;
+  background-color: lightgrey;
+}
