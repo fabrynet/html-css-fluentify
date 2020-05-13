@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&family=Roboto:wght@100;300;400;500&display=swap');
 /* reset della pagina */
 * {
   margin: 0;
@@ -7,12 +8,15 @@
 
 /* regole generali */
 body {
-  font-family: sans-serif;
+  font-family: Montserrat, sans-serif;
 }
 header {
   height: 500px;
   background-color: #003366;
   /* debug */
+}
+a {
+  text-decoration: none;
 }
 .padding1 {
   padding: 0 20%;
@@ -20,23 +24,88 @@ header {
 .padding2 {
   padding: 0 25%;
 }
+.buttons, .logins {
+  background-color: #66cc00;
+  color: #fff;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+}
+.logins {
+  background-color: rgba(0, 0, 0, 0.0);
+  border: 1px solid #fff;
+  padding: 5px 20px;
+}
 /* debug */
-.box {
+/* .box {
   background-color: blue;
   height: 100%;
-}
+} */
 
 /* menu navigazione */
 .navigation-bar {
   height: 100px;
+  padding: 10px 0;
+  color: #fff;
   /* debug */
-  background-color: yellow;
+  /* background-color: yellow; */
 }
+/* imposto INLINE-BLOCK a tutti gli elementi della barra di navigazione */
+.navigation-bar div {
+  display: inline-block;
+  height: 100px;
+}
+/* stili per i menu di navigazione */
+#header-nav {
+  /* vertical-align: top; */
+    line-height: 100%;
+}
+.inline-menu {
+  line-height: 100%;
+}
+.inline-menu li {
+  display: inline-block;
+  padding: 0 10px 0;
+}
+.inline-menu li a {
+  color: #fff;
+  /* rendo linkabile l'intera area verticale di ogni li */
+  display: inline-block;
+}
+.inline-menu li a:visited {
+  color: #fff;
+}
+.inline-menu li:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+}
+/* tutor */
+
 /* jumbotron */
-.jumbotron {
+#jumbotron {
+  position: relative;
   height: 400px;
+  background-image: url("../fluentify-imgs/fluentify-jumbo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
   /* debug */
-  background-color: red;
+  /* background-color: red; */
+}
+#jumbotron h1 {
+  position: absolute;
+  left: 0;
+  top: 20%;
+  width: 50%;
+  color: #fff;
+  font-size: 40px;
+}
+#jumbotron .buttons {
+  padding: 15px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+
 }
 
 /* Sezione 1 */
@@ -49,14 +118,14 @@ header {
 .section2 {
   height: 300px;
   /* debug */
-  background-color: green;
+  /* background-color: green; */
 }
 
 /* Sezione 3 */
 .section3 {
   height: 300px;
   /* debug */
-  background-color: pink;
+  /* background-color: pink; */
 }
 
 /* Sezione 4 */
