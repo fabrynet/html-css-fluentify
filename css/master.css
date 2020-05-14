@@ -29,6 +29,14 @@ a {
 .s-container {
   padding: 0 15%;
 }
+.column33 {
+  width: calc(100% / 3);
+  float: left;
+}
+.column50 {
+  width: 50%;
+  float: left;
+}
 .buttons, .logins {
   background-color: #66cc00;
   color: #fff;
